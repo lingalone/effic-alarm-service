@@ -58,6 +58,7 @@ public class MailServiceTest {
         //创建邮件正文
         Context context = new Context();
         context.setVariable("id", "006");
+        context.setVariable("id", "006");
         String emailContent = templateEngine.process("emailTemplate", context);
 
         mailService.sendHtmlMail("1020222580@qq.com","主题：这是模板邮件",emailContent);
